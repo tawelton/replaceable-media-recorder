@@ -157,6 +157,7 @@ export default function WebRecorder() {
 
   async function startRecording(stream, config = {}) {
     let mimeTypes = [
+      "video/webm; codecs=avc1",
       'video/webm; codecs="vp9, opus"',
       'video/webm; codecs="vp8, opus"',
       "video/webm; codecs=vp9",
@@ -164,6 +165,7 @@ export default function WebRecorder() {
       "video/webm; codecs=daala",
       "video/webm; codecs=h264",
       "video/webm;",
+      "video/mp4;codecs:h264",
       "video/mpeg",
     ];
 
